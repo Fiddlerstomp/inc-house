@@ -38,12 +38,19 @@ a {
     column-gap: var(--gap);
 }
 
+.title {
+    font-size: 40px;
+    line-height: 110%;
+    color: var(--color-shark);
+}
+
 /* buttons */
 
 .btn {
     padding: 20px 60px;
     transition: background-color 0.3s;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .primary-btn {
@@ -87,13 +94,18 @@ a {
     color: #f4f6f5;
 }
 
-.tab-btn:focus {
+/* .tab-btn:focus {
     background: var(--color-surf);
     border-color: var(--color-leaves);
     color: var(--color-shark);
-}
+} */
 
 .tab-btn:active {
+    background-color: var(--color-killarney);
+    color: #f4f6f5;
+}
+
+.tab-btn--active {
     background-color: var(--color-killarney);
     color: #f4f6f5;
 }
@@ -160,7 +172,6 @@ a {
 }
 
 .product-btn {
-    cursor: pointer;
     width: 100%;
 }
 
@@ -231,4 +242,30 @@ svg:hover {
     line-height: 27px;
     margin-top: 20px;
     margin-bottom: 60px;
+}
+
+.catalog {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.catalog__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.catalog__tabs {
+    list-style-type: none;
+    display: flex;
+    gap: var(--gap);
+}
+
+#catalog-list {
+    list-style-type: none;
+    row-gap: var(--gap);
+}
+
+.catalog__item {
+    grid-column: 4 span;
 }

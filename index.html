@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
     <title>Ink. House</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -70,16 +71,26 @@
                 </div>
             </div>
         </section>
-        <div class="card-art">
-            <img src="https://live.verstaem.online/house/data/images/3.jpg" alt>
-            <div class="product__content">
-                <p class="product__author">Франсуа Дюпон</p>
-                <h3 class="product__title">Процедура</h3>
-                <p class="product__params">Цветная литография (40Х60)</p>
-                <p class="product__price">20 000 руб</p>
-                <button class="btn primary-btn product-btn">В корзину</button>
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__header">
+                    <h2 class="title catalog__title">Репродукции</h2>
+                    <ul class="catalog__tabs">
+                        <li class="catalog__items">
+                            <button class="btn tab-btn tab-btn--active" data-country="France">Франция</button>
+                        </li>
+                        <li class="catalog__items">
+                            <button class="btn tab-btn" data-country="Germany">Германия</button>
+                        </li>
+                        <li class="catalog__items">
+                            <button class="btn tab-btn" data-country="England">Англия</button>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="grid" id="catalog-list"></ul>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 
