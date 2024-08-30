@@ -73,6 +73,30 @@ a {
     color: #ffffff;
 }
 
+.tab-btn {
+    padding: 10px 20px;
+    border: solid 1px var(--color-surf);
+    border-radius: 20px;
+    color: var(--color-shark);
+    background-color: var(--color-surf);
+}
+
+.tab-btn:hover {
+    background-color: var(--color-leaves);
+    color: #f4f6f5;
+}
+
+.tab-btn:focus {
+    background: var(--color-surf);
+    border-color: var(--color-leaves);
+    color: var(--color-shark);
+}
+
+.tab-btn:active {
+    background-color: var(--color-killarney);
+    color: #f4f6f5;
+}
+
 /* content */
 
 header {
