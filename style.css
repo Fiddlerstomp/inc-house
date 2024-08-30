@@ -9,7 +9,7 @@
     --color-killarney: #376b44;
     --color-sand: #eedb6d;
     --color-corn: #faeb97;
-    --color-anzac: #d9d949;
+    --color-anzac: #d9b949;
     --color-mandalay: #a38314;
     --gap: 30px;
 }
@@ -95,6 +95,24 @@ a {
 .tab-btn:active {
     background-color: var(--color-killarney);
     color: #f4f6f5;
+}
+
+.promo-btn {
+    background-color: var(--color-sand);
+    color: var(--color-shark);
+}
+
+.promo-btn:hover {
+    background-color: var(--color-corn);
+}
+
+.promo-btn:focus {
+    background-color: var(--color-corn);
+    border: 1px solid var(--color-mandalay);
+}
+
+.promo-btn:active {
+    background-color: var(--color-anzac);
 }
 
 /* content */
